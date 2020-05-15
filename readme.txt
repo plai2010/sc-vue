@@ -1,4 +1,4 @@
-=== Vue-SC ===
+=== SC-Vue ===
 Contributors: scoop082110
 Donate link: https://www.paypal.me/scoop082110
 Tags: vue
@@ -13,7 +13,7 @@ Easily inject Vue.js app into WordPress via shortcode.
 
 == Description ==
 
-Vue-SC provides a shortcode to inject [Vue.js](https://vuejs.org/) apps
+SC-Vue provides a shortcode to inject [Vue.js](https://vuejs.org/) apps
 into WordPress pages and posts. For example, the following shortcode
 would inject the 'demo_posts' app:
 
@@ -30,14 +30,13 @@ in the plugin. For the 'demo_posts' app, that means:
 
 The index.js Javascript file sets up an initialization function for
 creating a Vue model. That model controls a <div> DOM element that
-Vue-SC renders; the content of that <div> comes from index.html.
+SC-Vue renders; the content of that <div> comes from index.html.
 
 See apps/demo_01 and apps/demo_02 for simple examples of index.js
 and index.html. For a more complex and realistic example that uses
 [webpack.js](https://webpack.js.org/) to packs Javascript and styles
-into a single
-index.js, see apps/demo_posts. Additional details may be found in
-the documentation of the shortcode function in init.php.
+into a single index.js, see apps/demo_posts. Additional details may
+be found in the documentation of the shortcode function in init.php.
 
 == Installation ==
 
@@ -59,7 +58,7 @@ other version.
 
 = Does this work with PHP 5.x? =
 
-No. This plugin uses various PHP 7.x features. Backporting to PHP 5.x
+This plugin is developed with PHP 7.x. Backporting to PHP 5.x
 should not be difficult however.
 
 == Changelog ==

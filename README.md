@@ -1,4 +1,4 @@
-## Vue-SC ##
+## SC-Vue ##
 
 A WordPress plugin injecting Vue.js applications via shortcode.
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Vue.js Shortcode
+ * Plugin Name: Shortcode for Vue.js
  * Description: Injection of Vue.js based application via shortcode.
  * Version: 0.1
  * Author: Patrick Lai
@@ -12,28 +12,28 @@
  * Shortcode [pl2010_vue] for Vue.js integration.
  *
  * Attributes:
- *   app - Name for the Vue.js integration (required).
+ *   app - Name for the Vue.js integration app (required).
  *
  * Other attributes are treated as parameters for the integration app.
  *
  * The 'app' attribute refers to the same named directory under the 'apps'
  * directory of this plugin. Two files are expected there, namely index.html
- * and index.js. For example, [pl2010_vue app="test_01"/] corresponds to
- * '.../apps/test_01/index.html' and '.../apps/test_01/index.js'.
+ * and index.js. For example, [pl2010_vue app="demo_01"/] corresponds to
+ * '.../apps/demo_01/index.html' and '.../apps/demo_01/index.js'.
  *
  * The index.html contains HTML to be wrapped by the <div> mount point
- * of the Vue.js application. For the 'test_01' app, this shortcode would
+ * of the Vue.js application. For the 'demo_01' app, this shortcode would
  * return something like this:
  *
- *   <div class="pl2010_vue pl2010_vue_app_test_01">
+ *   <div class="pl2010_vue pl2010_vue_app_demo_01">
  *     ...
- *     content from .../apps/test_01/index.html
+ *     content from .../apps/demo_01/index.html
  *     ...
  *   </div>
  *
  * The shortcode also enqueues the 'index.js' script file, which should
  * assign an initialization function to the variable pl2010_vue_init_<app>,
- * (pl2010_vue_init_test_01 in our example). The shortcode generates
+ * (pl2010_vue_init_demo_01 in our example). The shortcode generates
  * Javascript code to call this function with an object with these
  * properties:
  *

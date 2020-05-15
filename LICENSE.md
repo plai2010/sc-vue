@@ -1,4 +1,4 @@
-## Vue-SC License ##
+## SC-Vue License ##
 
 *Copyright (c) 2019-2020 Patrick Lai*
 

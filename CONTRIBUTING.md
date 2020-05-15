@@ -1,4 +1,4 @@
-## Contributing to Vue-SC ##
+## Contributing to SC-Vue ##
 
 Here are some suggested areas:
 
