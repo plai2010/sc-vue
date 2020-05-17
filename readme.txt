@@ -17,9 +17,9 @@ SC-Vue provides a shortcode to inject [Vue.js](https://vuejs.org/) apps
 into WordPress pages and posts. For example, the following shortcode
 would inject the 'demo_posts' app:
 
-```
+`
   [pl2010_vue app="demo_posts"/]
-```
+`
 
 An app is made up of two files, index.js and index.html. They reside
 in a subdirectory bearing the app's name under the 'apps' directory
@@ -29,8 +29,8 @@ in the plugin. For the 'demo_posts' app, that means:
 * *WP\_PLUGIN\_DIR*/vue-sc/apps/demo_posts/index.html
 
 The index.js Javascript file sets up an initialization function for
-creating a Vue model. That model controls a <div> DOM element that
-SC-Vue renders; the content of that <div> comes from index.html.
+creating a Vue model. That model controls a &lt;div&gt; DOM element that
+SC-Vue renders; the content of that &lt;div&gt; comes from index.html.
 
 See apps/demo_01 and apps/demo_02 for simple examples of index.js
 and index.html. For a more complex and realistic example that uses
@@ -47,7 +47,7 @@ be found in the documentation of the shortcode function in init.php.
 1.  Install any additional Vue app in  '*WP\_PLUGIN\_DIR*/vue-sc/apps'.
     Note that app name must be simple identifier that begins with a letter
 	followed by any number of digits, letters, and the underscore.
-1.  Startg using shortcode ```[pl2010_vue app="..."/]```!
+1.  Startg using shortcode `[pl2010_vue app="..."/]`!
 
 == Frequently Asked Questions ==
 

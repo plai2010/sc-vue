@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Shortcode for Vue.js
  * Description: Injection of Vue.js based application via shortcode.
- * Version: 0.1
+ * Version: 1.0
  * Author: Patrick Lai
  * @copyright Copyright (c) 2019,2020 Patrick Lai
  */

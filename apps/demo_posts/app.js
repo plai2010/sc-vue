@@ -1,5 +1,6 @@
-import './style.css';
-
+// This module exports the SC-Vue initialization function of
+// this Vue.js app.
+//
 export { initVueApp as default };
 
 function sanitizeSize(sz) {
@@ -72,11 +73,15 @@ function initVueApp(ctx) {
 						offset: this.posts.length
 					},
 					success: (coll, resp, opts) => {
-						var n;
-						for (n in resp) {
-							this.posts.push(resp[n]);
+						try {
+							var n;
+							for (n in resp) {
+								this.posts.push(resp[n]);
+							}
 						}
-						this.loading = false;
+						finally {
+							this.loading = false;
+						}
 					},
 					error: (coll, resp, opts) => {
 						this.loading = false;
