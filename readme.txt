@@ -25,8 +25,8 @@ An app is made up of two files, index.js and index.html. They reside
 in a subdirectory bearing the app's name under the 'apps' directory
 in the plugin. For the 'demo_posts' app, that means:
 
-* *WP\_PLUGIN\_DIR*/vue-sc/apps/demo_posts/index.js
-* *WP\_PLUGIN\_DIR*/vue-sc/apps/demo_posts/index.html
+* *WP\_PLUGIN\_DIR*/sc-vue/apps/demo_posts/index.js
+* *WP\_PLUGIN\_DIR*/sc-vue/apps/demo_posts/index.html
 
 The index.js Javascript file sets up an initialization function for
 creating a Vue model. That model controls a &lt;div&gt; DOM element that
@@ -40,11 +40,11 @@ be found in the documentation of the shortcode function in init.php.
 
 == Installation ==
 
-1.  Upload the plugin files to the '*WP\_PLUGIN\_DIR*/vue-sc'
+1.  Upload the plugin files to the '*WP\_PLUGIN\_DIR*/sc-vue'
     directory, or install the plugin through the 'Plugin's screen in
     WordPress.
 1.  Activate the plugin.
-1.  Install any additional Vue app in  '*WP\_PLUGIN\_DIR*/vue-sc/apps'.
+1.  Install any additional Vue app in  '*WP\_PLUGIN\_DIR*/sc-vue/apps'.
     Note that app name must be simple identifier that begins with a letter
 	followed by any number of digits, letters, and the underscore.
 1.  Startg using shortcode `[pl2010_vue app="..."/]`!
