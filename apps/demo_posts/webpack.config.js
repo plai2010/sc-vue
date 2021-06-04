@@ -11,15 +11,15 @@ const bootVar = 'pl2010_vue_init_' + appName;
 //
 //   import './style.css';
 //   import init from './app.js';
-//   pl2010_vue_init_demo_posts = init;
+//   window.pl2010_vue_init_demo_posts = init;
 //
 const wrapper = path.resolve(__dirname, 'tmp-wrapper.js');
-fs.writeFile(
+fs.writeFileSync(
 	wrapper,
 	'// This is a generated script.'
 		+ "\n" + "import './style.css';"
 		+ "\n" + "import init from './app.js';"
-		+ "\n" + bootVar + " = init;"
+		+ "\n" + "window." + bootVar + " = init;"
 );
 
 module.exports = (env, argv) => ({

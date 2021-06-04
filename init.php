@@ -120,8 +120,9 @@ add_shortcode('pl2010_vue', function($attrs, $content=null, $tag='pl2010_vue') {
 	$inlineJs = <<<EOS
 		var $initFVar;
 		jQuery(document).ready(function() {
-			if ($initFVar) {
-				$initFVar($jsVueCtx);
+			const init = window.$initFVar || $initFVar;
+			if (init) {
+				init($jsVueCtx);
 			}
 		});
 EOS;
